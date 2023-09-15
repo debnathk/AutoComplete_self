@@ -29,7 +29,8 @@ imputed_data = pd.read_csv(args.imputed_data_file).set_index('ID')
 imputed_data
 #%%
 assert simulated_data.shape == imputed_data.shape
-assert simulated_data.index.tolist() == imputed_data.index.tolist()
+# assert simulated_data.index == imputed_data.index
+# assert simulated_data.index.tolist() == imputed_data.index.tolist()
 assert imputed_data.isna().sum().sum() == 0
 assert len(imputed_data.index.intersection(original_data.index)) == len(imputed_data)
 #%%

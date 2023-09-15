@@ -15,7 +15,7 @@ python fit.py datasets/phenotypes/data_fit.csv \
 # impute a test split of the data
 python fit.py datasets/phenotypes/data_fit.csv \
     --id_name ID \
-    --impute_using_saved datasets/phenotypes/model.pth \
+    --impute_using_saved datasets/phenotypes/data_fit.pth \
     --impute_data_file datasets/phenotypes/data_test.csv \
     --device cpu:0
 
